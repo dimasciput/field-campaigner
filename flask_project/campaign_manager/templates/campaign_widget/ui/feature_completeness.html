@@ -1,5 +1,5 @@
 <div class="completness">
-    <h3 class="progress-bar-indicator">{{ data.complete }}/{{ data.total }} ({{ data.percentage }} %)</h3>
+    <h3 class="progress-bar-indicator">{{ data.percentage }}% ({{ data.complete }}/{{ data.total }})</h3>
     <div class="progress-bar-wrapper">
         <div class="progress-bar" style="width: {{ data.percentage }}%"></div>
     </div>
@@ -96,7 +96,11 @@
 
     .progress-bar-indicator {
         color: #77a1aa;
-        margin-top: 0px;
+        font-size: 30pt;
+        font-weight: bolder;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
     }
 
     .progress-bar-wrapper {
